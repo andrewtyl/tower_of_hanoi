@@ -1,24 +1,17 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Tower from './Tower';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div classname="intro">
+        <h1>Tower Of Hanoi</h1>
+        <h2>Created by Andrew Jessen-Tyler</h2>
+        <p>Click on one ring on top of a stack to move it. It can be moved to one of the other two stacks as long as it is smaller than the ring it is going to be put on. The goal is to get all the rings from the far left stack to the far right stack. Give it a try!</p>
+      </div>
+      <Tower/>
     </div>
   );
 }
